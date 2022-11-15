@@ -1,0 +1,11 @@
+body{
+    background-color: indianred;
+}
+
+thead{
+    color: skyblue;
+    background-color: black;
+}
+tbody{
+    background-color: lightgray;
+}   
