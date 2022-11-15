@@ -12,8 +12,9 @@ fetch('https://northwind.vercel.app/api/products')
         <th scope="row">${count}</th>
         <td>${element.name}</td>
         <td>${element.unitPrice}</td>
-        <td style="(element.category?.name==undefined)? color:red : color:black ">${(element.category?.name == undefined) ? "category not found" : element.category.name}</td>
-        <td>${(element.discontinued == true)? "YES": "FALSE"}</td>
+        <td style="color: ${element.category?.name == undefined ? "red" : "black"}" > ${(element.category?.name == undefined) ? "category not found" : element.category.name}</td>
+        <td>${(element.discontinued == true) ? "YES" : "FALSE"}</td>
       </tr>`
         });
+
     });     
